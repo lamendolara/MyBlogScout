@@ -5,6 +5,20 @@
     padding: 0.5em 1em 0.5em 1em;
 }
 
+.header-brand {
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #0277bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-brand:hover {
+    color: #01579b;
+}
+
+
 .blog-action {
     display: flex;
     justify-content: center;
@@ -25,3 +39,12 @@
     height: 120px;
     margin-right: 1em;
 }
+
+
+
+
+
+
+
+
+
