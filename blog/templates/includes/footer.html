@@ -1,36 +1,45 @@
-<div class="callout secondary">
-  <div class="grid-x align-center">
-      <h3 class="cell small-12 large-7">Contact Form:</h3>
-      <h5 class="cell small-12 large-7" style="color: #0277bd;">You can send your comments about this blog, consult about analysis reports for players and agents in Spanish and English.
-      </h5>
-      <form class="cell small-12 large-7" method="POST" action="{% url 'home_app:add-contac' %}">{% csrf_token %}
-          <div class="grid-x grid-padding-x">
-              <div class="medium-6 cell">
-                <label>Names
-                  <input type="text" placeholder="nombres..." name="full_name" id="id_full_name">
-                </label>
-              </div>
-              <div class="medium-6 cell">
-                <label>Email
-                  <input type="email" placeholder="Correo ..." name="email" id="id_email">
-                </label>
-              </div>
-              <div class="medium-12 cell">
-                  <label>Messagge
-                      <textarea placeholder="Mensaje" name="messagge" id="id_messagge"></textarea>
+<footer id="footer">
+  <div class="callout secondary">
+    <div class="grid-x align-center">
+        <h4 class="cell small-12 large-7">Ask us about our scouting reports:</h4>
+        <h6 class="cell small-12 large-7" style="color: #0277bd;">Our team of scouts has experience in the Argentine League and Premier League (England) and other European Leagues.
+          We make professional reports for players, agents and clubs. We also have scouts specialized in goalkeepers. The reports are made in English and Spanish. Ask us!
+        </h6>
+        <h5 class="cell small-12 large-7" style="color: #06a563;">WhatsApp + 34 600 76 93 80
+        </h5>
+        <br>
+        <br>
+        <h4 class="cell small-12 large-7">Contact form:</h4>
+        <form class="cell small-12 large-7" method="POST" action="{% url 'home_app:add-contac' %}">{% csrf_token %}
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                  <label>Names
+                    <input type="text" placeholder="nombres..." name="full_name" id="id_full_name">
                   </label>
-              </div>
-              <div class="medium-12 cell">
-                  <button type="submit" class="success button">Send</button>
-              </div>
-              <p class="cell small-12">
-                <span class=""><b> {{ name }} </b></span><br>
-                <span class=""> {{ description }} </span><br>
-                <span class=""> Other forms of contact: </span>
-                <span class="label info"> {{ correo }} </span>
-                <span class="label info"> {{ phone }} </span>
-              </p>
-          </div>
-      </form>      
+                </div>
+                <div class="medium-6 cell">
+                  <label>Email
+                    <input type="email" placeholder="Correo ..." name="email" id="id_email">
+                  </label>
+                </div>
+                <div class="medium-12 cell">
+                    <label>Messagge
+                        <textarea placeholder="Mensaje" name="messagge" id="id_messagge"></textarea>
+                    </label>
+                </div>
+                <div class="medium-12 cell">
+                    <button type="submit" class="success button">Send</button>
+                </div>
+                <p class="cell small-12">
+                  <span class=""><b> {{ name }} </b></span><br>
+                  <span class=""> {{ description }} </span><br>
+                  <span class=""> Other forms of contact: </span>
+                  <span class="label info"> {{ correo }} </span>
+                  <span class="label info"> {{ phone }} </span>
+                </p>
+            </div>
+        </form>      
+    </div>
   </div>
-</div>
+</footer>
+

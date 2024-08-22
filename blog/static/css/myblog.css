@@ -6,7 +6,7 @@
 }
 
 .header-brand {
-    font-size: 25px; 
+    font-size: 30px; 
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     color: #0277bd;
@@ -16,6 +16,19 @@
 
 .header-brand:hover {
     color: #01579b;
+}
+
+.header-brand-2 {
+    font-size: 25px; 
+    /* font-weight: bold; */
+    font-family: 'Lato', sans-serif;
+    color: #7aa5be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-brand-2:hover {
+    color: #7793a8;
 }
 
 
