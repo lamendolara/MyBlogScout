@@ -5,7 +5,7 @@ import os
 DEBUG = False
 
 # Add your allowed hosts here
-ALLOWED_HOSTS = ['134.209.252.60']  # ['your_domain.com', 'your_ip_address']Cambia esto por tu dominio o IP del servidor
+ALLOWED_HOSTS = ['161.35.208.71']  # ['your_domain.com', 'your_ip_address']Cambia esto por tu dominio o IP del servidor
 
 # Database
 DATABASES = {
