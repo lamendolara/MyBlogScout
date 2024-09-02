@@ -20,6 +20,16 @@
   {% block js %}{% endblock js %}
 
   <script src="{% static 'js/app.js' %}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('scrollToFooter').addEventListener('click', function(e) {
+            e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave al footer
+        });
+    });
+  </script>
+
+
 </body>
 </html>
 

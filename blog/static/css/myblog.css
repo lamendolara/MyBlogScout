@@ -20,16 +20,25 @@
 
 .header-brand-2 {
     font-size: 25px; 
-    /* font-weight: bold; */
+    font-weight: bold; 
     font-family: 'Lato', sans-serif;
     color: #7aa5be;
     text-decoration: none;
-    transition: color 0.3s ease;
+    animation: colorPulse 2s infinite ease-in-out; /* Añadido animación */
 }
 
-.header-brand-2:hover {
-    color: #7793a8;
+@keyframes colorPulse {
+    0% {
+        color: #7aa5be; /* Color inicial */
+    }
+    50% {
+        color: #c2c5c7; /* Color blanco intermedio */
+    }
+    100% {
+        color: #7aa5be; /* Vuelve al color inicial */
+    }
 }
+
 
 
 .blog-action {
