@@ -56,6 +56,8 @@ class Entry(TimeStampedModel):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE
+        # null=False, 
+        # blank=False
     )
     category = models.ForeignKey(
         Category,
@@ -71,7 +73,9 @@ class Entry(TimeStampedModel):
     public = models.BooleanField(default=False)
     image = models.ImageField(
         'Imagen',
-        upload_to='Entry'
+        upload_to='Entry',
+        blank=True,
+        null=True
     )
     portada = models.BooleanField(default=False)
     in_home = models.BooleanField(default=False)

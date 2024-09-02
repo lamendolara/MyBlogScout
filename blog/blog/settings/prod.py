@@ -23,6 +23,20 @@ DATABASES = {
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR.child('staticfiles')  # Directorio para archivos estáticos en producción
 
+STATICFILES_DIRS = [
+    BASE_DIR.child('static'),
+]
+
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
+
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.child('media')

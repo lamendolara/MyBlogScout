@@ -16,7 +16,9 @@ class Favorites(TimeStampedModel):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         related_name='user_favorites',
-        on_delete=models.CASCADE,
+        on_delete=models.CASCADE
+        # null=False, 
+        # blank=False
     )
     entry = models.ForeignKey(
         Entry,
