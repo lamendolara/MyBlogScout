@@ -19,12 +19,13 @@
 }
 
 .header-brand-2 {
-    font-size: 25px; 
+    font-size: 20px; 
     font-weight: bold; 
     font-family: 'Lato', sans-serif;
     color: #7aa5be;
     text-decoration: none;
     animation: colorPulse 2s infinite ease-in-out; /* Añadido animación */
+    margin-left: 10px;
 }
 
 @keyframes colorPulse {
@@ -65,10 +66,13 @@
 
 .card-img {
     width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 225px; /* Mantén una altura uniforme  */
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsión cover*/
-    object-position: center; /* Centra la imagen en su contenedor */
+    height: 225px; /* Mantén una altura uniforme */
+    object-fit: cover; /* Cambia a cover si deseas que la imagen cubra todo el contenedor */
+    object-position: top; /* Centra la imagen en su contenedor */
+    margin: 0; /* Asegúrate de que no haya márgenes */
 }
+
+
 
 
 

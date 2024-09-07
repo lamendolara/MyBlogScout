@@ -44,7 +44,7 @@
                     <div class="card" style="width: 100%;">
                         <img src="{{ entrada.image.url }}" class="card-img">
                         <div class="card-section">
-                          <h4><a href="{% url 'entrada_app:entry-detail' entrada.slug %}">{{ entrada.title | truncatechars:40 }}</a></h4>
+                          <h5 style="text-align: center;"><a href="{% url 'entrada_app:entry-detail' entrada.slug %}">{{ entrada.title | truncatechars:40 }}</a></h5>
                           <!-- <p>{{ entrada.resume | truncatechars:70 }}</p> -->
                         </div>
                     </div>
