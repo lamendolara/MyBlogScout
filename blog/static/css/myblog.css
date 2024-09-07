@@ -63,6 +63,12 @@
 }
 
 
+.card-img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 225px; /* Mantén una altura uniforme  */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsión cover*/
+    object-position: center; /* Centra la imagen en su contenedor */
+}
 
 
 
